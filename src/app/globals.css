@@ -26,35 +26,117 @@ body {
 }
 
 @layer components {
-    .calculator {
-        @apply h-screen from-50% from-green-500 to-50% to-red-500 bg-gradient-to-r flex flex-col justify-center items-center;
-    }
+  .calculator {
+    @apply h-screen from-50% from-green-500 to-50% to-red-500 bg-gradient-to-r flex flex-col justify-center items-center;
+  }
 
-    .calculator h1 {
-        @apply text-4xl font-bold text-white uppercase tracking-[30px] mb-8;
-    }
+  .calculator h1 {
+    @apply text-4xl font-bold text-white uppercase tracking-[30px] mb-8;
+  }
 
-    .calculator section {
-        @apply flex flex-row gap-12
-    }
+  .calculator section {
+    @apply flex flex-row gap-12
+  }
 
-    .calculator div {
-        @apply flex flex-col bg-blue-900 rounded-lg p-8 w-120 h-100 text-white text-xl;
-    }
+  .calculator div {
+    @apply flex flex-col bg-blue-900 rounded-lg p-8 w-120 h-100 text-white text-xl;
+  }
 
-    .calculator div:first-child {
-        @apply gap-10;
-    }
+  .calculator div:first-child {
+    @apply gap-10;
+  }
 
-    .calculator div span {
-        @apply border-b-4 border-white p-8;
-    }
+  .calculator div span {
+    @apply border-b-4 border-white p-8;
+  }
 
-    .calculator div:first-child button {
-        @apply bg-green-500 hover:bg-green-900 text-white font-bold py-2 px-4 rounded mt-6;
-    }
+  .calculator div:first-child button {
+    @apply bg-green-500 hover:bg-green-900 text-white font-bold py-2 px-4 rounded mt-6;
+  }
 
-    .btn {
-        @apply w-full h-16 text-3xl hover:border-slate-950 rounded-lg cursor-pointer hover:border-4;
-    }
+  .btn {
+    @apply w-full h-16 text-3xl hover:border-slate-950 rounded-lg cursor-pointer hover:border-4;
+  }
+
+  /* ///////////////////////////////////////////////////// */
+
+
+  /* Custom Quiz Styles */
+  .quiz-container {
+    @apply flex items-center justify-center h-screen w-screen bg-gradient-to-br from-teal-500 to-orange-400;
+  }
+
+  .quiz-card {
+    @apply bg-white/90 shadow-2xl rounded-2xl w-[80%] h-[80%] aspect-video flex flex-col items-center justify-center p-8;
+  }
+
+  .quiz-question {
+    @apply text-2xl font-bold text-gray-800 mb-6 text-center;
+  }
+
+  .quiz-options {
+    @apply grid grid-cols-2 gap-4 w-full max-w-lg;
+  }
+
+  .quiz-btn {
+  @apply bg-teal-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:opacity-90 transition cursor-pointer;
+  }
+
+  .quiz-progress {
+    @apply mt-6 text-gray-600;
+  }
+
+  .quiz-finish {
+    @apply flex flex-col items-center;
+  }
+
+  .quiz-score {
+    @apply text-3xl font-bold text-gray-800 mb-4;
+  }
+
+  .quiz-container {
+    @apply min-h-screen flex items-center justify-center bg-gray-100;
+  }
+
+  .quiz-card {
+    @apply bg-white rounded-lg shadow-lg p-8 w-full max-w-md;
+  }
+
+  .quiz-welcome h1 {
+    @apply text-3xl font-bold mb-4 text-teal-600
+  }
+
+  .quiz-welcome p {
+    @apply mb-2 text-gray-700
+  }
+
+  .quiz-welcome ol {
+    @apply list-decimal list-inside mb-6 text-gray-600
+  }
+
+  .quiz-btn {
+  @apply mt-4 px-6 py-2 bg-teal-600 text-white rounded hover:bg-teal-700 transition
+  }
+
+  .quiz-question {
+    @apply text-xl font-semibold mb-6 text-gray-800
+  }
+
+  .quiz-options {
+    @apply grid grid-cols-1 gap-4 mb-6
+  }
+
+  .quiz-progress {
+    @apply text-sm text-gray-500
+  }
+
+  .quiz-finish {
+    @apply flex flex-col items-center
+  }
+
+  .quiz-score {
+    @apply text-2xl font-bold mb-4 text-green-600
+  }
+
+
 }
