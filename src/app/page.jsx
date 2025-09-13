@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
       Quiz-app Link <Link href="/quiz-app">View</Link>
-      Quiz-app Link <Link href="/tic-tac-toe">View</Link>
-      Quiz-app Link <Link href="/bmi-calculator">View</Link>
+      Tic Tac Toe Link <Link href="/tic-tac-toe">View</Link>
+      BMI Calculator <Link href="/bmi-calculator">View</Link>
 
     </div>
   )
