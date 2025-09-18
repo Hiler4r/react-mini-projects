@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { IoLogoGameControllerB } from "react-icons/io";
+
 
 export default function TicTacToe() {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -58,7 +60,7 @@ export default function TicTacToe() {
       }}
     >
       <h1 className="text-5xl font-extrabold text-white drop-shadow-lg tracking-wide">
-        🎮 Tic-Tac-Toe
+        <IoLogoGameControllerB /> Tic-Tac-Toe
       </h1>
 
       <div className="grid grid-cols-3 gap-3 bg-white/80 p-6 rounded-2xl shadow-2xl">
