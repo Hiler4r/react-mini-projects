@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { IoGameControllerOutline } from "react-icons/io5";
+import { IoLogoGameControllerB } from "react-icons/io";
+
 
 
 export default function TicTacToe() {
@@ -60,7 +61,7 @@ export default function TicTacToe() {
       }}
     >
       <h1 className="text-5xl font-extrabold text-white drop-shadow-lg tracking-wide">
-        <IoGameControllerOutline className="inline mr-2" /> Tic-Tac-Toe
+        <IoLogoGameControllerB className="inline mr-2" /> Tic-Tac-Toe
       </h1>
 
       <div className="grid grid-cols-3 gap-3 bg-white/80 p-6 rounded-2xl shadow-2xl">
