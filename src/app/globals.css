@@ -79,7 +79,7 @@ body {
   }
 
   .quiz-btn {
-  @apply bg-teal-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:opacity-90 transition cursor-pointer;
+    @apply bg-teal-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:opacity-90 transition cursor-pointer;
   }
 
   .quiz-progress {
@@ -115,7 +115,7 @@ body {
   }
 
   .quiz-btn {
-  @apply mt-4 px-6 py-2 bg-teal-600 text-white rounded hover:bg-teal-700 transition
+    @apply mt-4 px-6 py-2 bg-teal-600 text-white rounded hover:bg-teal-700 transition
   }
 
   .quiz-question {
@@ -138,5 +138,94 @@ body {
     @apply text-2xl font-bold mb-4 text-green-600
   }
 
+
+
+
+  /* Password Generator style */
+
+  /* Custom Gradient Background */
+  body {
+    @apply min-h-screen flex items-center justify-center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Card styling */
+  .password-card {
+    @apply w-full max-w-lg p-8 rounded-2xl shadow-2xl;
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  }
+
+  /* Buttons */
+  .btn {
+    @apply px-4 py-2 rounded-xl font-semibold transition-all duration-300;
+  }
+
+  .btn-generate {
+    @apply text-white;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+  }
+
+  .btn-copy {
+    @apply text-white;
+    background: linear-gradient(135deg, #10b981, #059669);
+  }
+
+
+
+  /* currency converter */
+.currency-converter {
+  .cc-app-bg {
+    @apply bg-gradient-to-tr from-indigo-900 to-orange-500;
+  }
+
+  .cc-app-container {
+    @apply h-screen w-screen flex items-center justify-center;
+  }
+
+  .cc-converter-card {
+    @apply w-[800px] aspect-video shadow-2xl rounded-2xl bg-white/80 backdrop-blur-md p-12 flex flex-col gap-8 border border-orange-300;
+  }
+
+  .cc-converter-title {
+    @apply text-4xl font-extrabold text-center text-orange-600 ;
+  }
+
+  .cc-converter-controls {
+    @apply flex items-center gap-6 justify-center;
+  }
+
+  .cc-amount-input {
+    @apply border-2 border-indigo-700 p-4 rounded-xl w-44 text-xl text-center text-indigo-900 font-semibold shadow-inner;
+    transition: border-color 0.3s ease;
+  }
+  .cc-amount-input:focus {
+    @apply border-orange-500 outline-none shadow-lg;
+  }
+
+  .cc-currency-select {
+    @apply border-2 border-indigo-700 p-4 rounded-xl text-xl text-indigo-900 font-semibold shadow-inner;
+    transition: border-color 0.3s ease;
+  }
+  .cc-currency-select:focus {
+    @apply border-orange-500 outline-none shadow-lg;
+  }
+
+  .cc-swap-btn {
+    @apply rounded-full p-4 shadow-lg border-2 border-indigo-700 bg-orange-400 text-indigo-900 font-bold hover:bg-orange-500 transition;
+  }
+
+  .cc-convert-btn-wrapper {
+    @apply flex justify-center;
+  }
+
+  .cc-convert-btn {
+    @apply bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-2xl text-xl font-bold shadow-xl transition;
+  }
+
+  .cc-result-text {
+    @apply text-center text-3xl font-extrabold text-indigo-900 mt-6 drop-shadow-lg;
+  }
+}
 
 }

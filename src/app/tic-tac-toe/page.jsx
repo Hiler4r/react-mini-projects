@@ -21,7 +21,7 @@ export default function TicTacToe() {
   }
 
   function renderSquare(index) {
-    const isWinningSquare = winner && winner.line.includes(index);
+    const isWinningSquare = !!(winner && Array.isArray(winner.line) && winner.line.includes && winner.line.includes(index));
     return (
       <button
         onClick={() => handleClick(index)}
